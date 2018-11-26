@@ -12,7 +12,7 @@ const Arbetslivserfarenhet = () => {
                 sköttes med hjälp av Gitlab.
             </Job>
             <Job name={'Ridebite'} role={'Utvecklare JavaScript / TypeScript'} period={'2015 - 2018'}>
-                Var med från början i en bildelningsstartup. Som en del i ett tvåmannateam tog vi fram en bildelningstjänst
+                Var med från början i en bildelningsstartup. Tillsammans med en till utvecklare och våra två grundare tog jag fram en bildelningstjänst
                 som hostades i Amazons moln. Jag ansvarade för utveckling av vårt backend-API, vår infrastruktur, drift och kontinuerliga
                 deployer. Integrationer mot Stripe för betalningar och trafikverket och Carfax för körkortskontroll och bildata.
             </Job>
