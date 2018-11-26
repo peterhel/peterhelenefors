@@ -1,0 +1,24 @@
+{
+    "name": "peterhelenefors",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "start": "next start"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@material-ui/core": "^3.5.1",
+        "@material-ui/icons": "^3.0.1",
+        "next": "^7.0.2",
+        "react": "^16.6.3",
+        "react-dom": "^16.6.3",
+        "react-jss": "^8.6.1",
+        "styled-jsx": "^3.1.2",
+        "typeface-roboto": "0.0.54"
+    }
+}
