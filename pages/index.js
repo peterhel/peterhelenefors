@@ -6,6 +6,7 @@ import Sammanfattning from '../src/components/Sammanfattning';
 import Arbetslivserfarenhet from '../src/components/Arbetslivserfarenhet';
 import profileImage from '../src/components/profileImage';
 import Email from "../src/components/Email";
+import Utbildning from "../src/components/Utbildning";
 
 // https://www.cv-mallen.se/online-cv/exempelkonto/reseledare
 
@@ -153,6 +154,9 @@ const Index = ({ classes }) => (
                         </Typography>
                     </div>
                 </div>
+            </div>
+            <div className={classes.studies}>
+                <Utbildning />
             </div>
         </div>
     </div>
