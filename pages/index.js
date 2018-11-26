@@ -7,6 +7,8 @@ import Arbetslivserfarenhet from '../src/components/Arbetslivserfarenhet';
 import profileImage from '../src/components/profileImage';
 import Email from "../src/components/Email";
 
+// https://www.cv-mallen.se/online-cv/exempelkonto/reseledare
+
 const styles = theme => ({
     page: {
         maxWidth: 1000,

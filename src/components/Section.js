@@ -6,7 +6,7 @@ const styles = theme => ({
         display: 'grid',
         gridTemplateAreas: `'box title' 'padding content'`,
         gridTemplateColumns: '30px auto',
-        marginBottom: 20
+        marginBottom: 20,
         // gridColumnGap: '10px'
     },
     box: {
@@ -22,16 +22,19 @@ const styles = theme => ({
         paddingTop: 2,
         paddingLeft: 8,
         borderBottom: '2px solid #43526E',
-        height: '100%'
+        height: '100%',
     },
     content: {
         gridArea: 'content',
         paddingLeft: 8,
-        marginTop: 15
+        marginTop: 15,
+        [theme.breakpoints.down(767)]: {
+            paddingRight: 30,
+        },
     },
     padding: {
-        gridArea: 'padding'
-    }
+        gridArea: 'padding',
+    },
 });
 
 const Section = ({ title, classes, children }) => {
@@ -41,7 +44,9 @@ const Section = ({ title, classes, children }) => {
             <div className={classes.title}>
                 <Typography variant={'headline'}>{title}</Typography>
             </div>
-            <div className={classes.content}>{React.Children.map(children, child => <Typography paragraph={true}>{child}</Typography>)}</div>
+            <div className={classes.content}>
+                {React.Children.map(children, child => <Typography paragraph={true}>{child}</Typography>)}
+            </div>
         </div>
     );
 };
