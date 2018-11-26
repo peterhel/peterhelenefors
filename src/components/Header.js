@@ -14,7 +14,8 @@ const styles = theme => ({
         gridArea: 'name',
         placeSelf: 'center',
         alignSelf: 'end',
-        fontWeight: 300
+        fontWeight: 300,
+        textAlign: 'center'
     },
     title: {
         gridArea: 'title',
