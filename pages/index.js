@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography/Typography';
 import Sammanfattning from '../src/components/Sammanfattning';
 import Arbetslivserfarenhet from '../src/components/Arbetslivserfarenhet';
 import profileImage from '../src/components/profileImage';
+import Email from "../src/components/Email";
 
 const styles = theme => ({
     page: {
@@ -109,7 +110,7 @@ const Index = ({ classes }) => (
                 </div>
                 <div className={classes.topbarCell}>
                     <Typography style={{ color: 'inherit' }}>
-                        <strong>E-MAIL:</strong> peter@helenefors.se
+                        <strong>E-MAIL:</strong> <Email/>
                     </Typography>
                 </div>
                 {/*<div className={classes.address}>*/}
@@ -136,7 +137,7 @@ const Index = ({ classes }) => (
                     <div className={classes.profileSection}>
                         <Typography variant={'title'}>Personuppgifter</Typography>
                         <Typography paragraph>
-                            E-post: peter@helenefors.se<br />
+                            E-post: <Email/><br />
                             Telefon: +46739332499<br />
                             Ålder: {yearsOfAge}
                             <br />
