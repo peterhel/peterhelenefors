@@ -8,8 +8,9 @@ const Arbetslivserfarenhet = () => {
         <Section title={'Arbetslivserfarenhet'}>
             <Job name={'Jickl'} role={'Utvecklare JavaScript / Java'} period={'2017 - 2018'}>
                 Under mitt år i casinostartupen Jickl fick jag god insikt i Google Clouds produktportfölj.
-                Vår sajt och de bakomliggande mikrotjänsterna driftades i Kubernetes. Byggen och automation
-                sköttes med hjälp av Gitlab.
+                Vår sajt och de bakomliggande mikrotjänsterna driftades i ett Kuberneteskluster. Byggen och automation
+                sköttes med hjälp av Gitlab. Sajten byggdes med ramverken ReactJS och Redux. I mikrotjänsterna används Spring Boot
+                och som datakälla Kafka.
             </Job>
             <Job name={'Ridebite'} role={'Utvecklare JavaScript / TypeScript'} period={'2015 - 2018'}>
                 Var med från början i en bildelningsstartup. Tillsammans med en till utvecklare och våra två grundare tog jag fram en bildelningstjänst
