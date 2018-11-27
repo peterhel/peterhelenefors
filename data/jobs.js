@@ -16,7 +16,7 @@ export default [
             'Kubernetes',
             'Google Cloud',
             'SendBird',
-            'Prismic',
+            'prismic',
             'Gitlab CI',
             'ReactJS',
             'Material UI',
@@ -36,9 +36,56 @@ export default [
         role: roles.UTVECKLING,
         from: 2014,
         to: 2017,
+        content: 'Byggde realtidsupplevelse för turneringar',
+        languages: ['JavaScript'],
+        tags: ['NodeJS', 'PubSub', 'Firebase', 'Rabbit MQ'],
+    },
+    {
+        name: 'MrGreen',
+        role: roles.UTVECKLING,
+        from: 2014,
+        to: 2017,
+        content: 'Automatiserade bygg-, test- och deployprocesser',
+        languages: ['bash', 'Ruby'],
+        tags: ['Chef', 'TeamCity'],
+    },
+    {
+        name: 'MrGreen',
+        role: roles.UTVECKLING,
+        from: 2014,
+        to: 2017,
         content:
-            'Tog fram den nya plattformen för casinot Garbo med backend i JavaScript (NodeJS). Byggde nya plattformen för casinot MrGreen där vi ersatte många gamla komponenter skrivna i ASP.NET med JavaScript. Den nya webbklienten skrevs i AngularJS. Introducerade EpiServer som nytt verktyg för contenthantering. Gjorde även mycket automation med kodgenerering, CI/CD och dashboards för att underlätta arbetet för våra utvecklare.',
-        tags: ['AngularJS', 'Firebase', 'Rabbit MQ', 'Octopus', 'Chef', 'Nginx', 'EpiServer', 'NodeJS'],
+            'Byggde kodgenerator för standardisering och struktur inför nya versionen av casinona Garbo och MrGreen.',
+        languages: ['JavaScript'],
+        tags: ['Yeoman'],
+    },
+    {
+        name: 'MrGreen',
+        role: roles.UTVECKLING,
+        from: 2014,
+        to: 2017,
+        content: 'Installerade och specialanpassade EPiServer för hantering av content.',
+        languages: ['C#'],
+        tags: ['EPiServer'],
+    },
+    {
+        name: 'MrGreen',
+        role: roles.UTVECKLING,
+        from: 2014,
+        to: 2017,
+        content:
+            'Tog fram arkitektur och byggde första versionen av client gateway som agerar klister mellan webbklient/appar och underliggande API.',
+        languages: ['JavaScript'],
+        tags: ['NodeJS', 'Micro Services', 'Docker'],
+    },
+    {
+        name: 'MrGreen',
+        role: roles.UTVECKLING,
+        from: 2014,
+        to: 2017,
+        content: 'Tog fram den nya plattformen för casinot Garbo med backend i JavaScript (NodeJS).',
+        languages: ['JavaScript'],
+        tags: ['AngularJS', 'NodeJS', 'Nginx'],
     },
     {
         name: 'Social Thrills',
@@ -47,6 +94,7 @@ export default [
         to: 2014,
         content:
             'Var med tidigt i satsningen på det sociala casinot Spin Tower där jag började som ensam senior utvecklare och tog fram aktitektur för utveckling av backend och infrastruktur. Vi började med att drifta allt i Microsoft Azure som då var lite för omoget och ersattes senare av Amazons motsvarande tjänster. Integrationer mot spelleverantörer och Facebook.',
+        languages: ['JavaScript', 'HTML', 'CSS', 'C#'],
         tags: ['JavaScript MVC', 'jMeter', 'Microsoft Azure', 'Amazon AWS', 'Nginx'],
     },
     {
@@ -74,7 +122,8 @@ export default [
         role: 'Pre-sale / Teknisk resurs',
         from: 2010,
         to: 2012,
-        content: 'Satt med som teknisk resurs i förhandlingar om att i enlighet med Lean förbättra processerna för hur en myndighet skulle kommunicera med sina leverantörer. Rent konkret hur ett specialanpassat system skulle kunna ersätta och hantera data gentemot epost med bifogade filer.',
+        content:
+            'Satt med som teknisk resurs i förhandlingar om att i enlighet med Lean förbättra processerna för hur en myndighet skulle kommunicera med sina leverantörer. Rent konkret hur ett specialanpassat system skulle kunna ersätta och hantera data gentemot epost med bifogade filer.',
         tags: ['Lean', 'Microsoft Visio', 'Microsoft Office'],
     },
     {
@@ -88,13 +137,13 @@ export default [
     },
     {
         name: 'SMART Hälsa i Nykvarn',
-        employer: 'Generic Constructions',
         role: roles.UTVECKLING,
         from: 2009,
         to: 2011,
-        content: 'Byggde ett bokningssystem från grunden för gymbesökare att boka in sig på pass. I version två av bokningssystemet skrevs det om från Java till C#.',
+        content:
+            'Byggde ett bokningssystem från grunden för gymbesökare att boka in sig på pass. I version två av bokningssystemet skrevs det om från Java till C#.',
         languages: ['Java', 'HTML', 'CSS', 'JavaScript', 'C#'],
-        tags: ['Google App Engine', 'MySQL']
+        tags: ['Google App Engine', 'MySQL'],
     },
 
     {
@@ -103,7 +152,8 @@ export default [
         role: roles.UTVECKLING,
         from: 2009,
         to: 2010,
-        content: 'Arbetade i ett litet team som byggde ett system för att kontrollera logistik, plocklistor och prenumerationer på recept och matvaror.',
+        content:
+            'Arbetade i ett litet team som byggde ett system för att kontrollera logistik, plocklistor och prenumerationer på recept och matvaror.',
         languages: ['C#', 'HTML', 'CSS', 'JavaScript'],
         tags: ['ASP.NET MVC'],
     },
@@ -113,9 +163,9 @@ export default [
         role: roles.UTVECKLING,
         from: 2009,
         to: 2010,
-        content: 'Byggde den nya kundwebben/butiksportalen med specialanpassad EpiServer.',
+        content: 'Byggde den nya kundwebben/butiksportalen med specialanpassad EPiServer.',
         languages: ['C#', 'HTML', 'CSS', 'JavaScript'],
-        tags: ['ASP.NET MVC', 'EpiServer'],
+        tags: ['ASP.NET MVC', 'EPiServer'],
     },
     {
         name: 'ICA',
@@ -124,7 +174,7 @@ export default [
         from: 2009,
         to: 2010,
         content: 'Byggde med två kollegor ett administrationsgränssnitt för recept.',
-        tags: ['ASP.NET MVC', 'EpiServer'],
+        tags: ['ASP.NET MVC', 'EPiServer'],
     },
     {
         name: 'Salus Ansvar',
@@ -135,7 +185,7 @@ export default [
         content:
             'Byggde i ett tvåmannateam ett system där man samlade in kundleads för bolån. Systemet bestod av administrationsgränssnitt och en webbtjänst för integration från externa parter.',
         languages: ['C#', 'JavaScript'],
-        tags: ['Visual Studio', 'EpiServer', 'jQuery', 'AJAX', 'ASP.NET MVC'],
+        tags: ['Visual Studio', 'EPiServer', 'jQuery', 'AJAX', 'ASP.NET MVC'],
     },
     {
         name: 'Salus Ansvar',
@@ -146,7 +196,7 @@ export default [
         content:
             'Skapade tillsammans med en kollega en webbsida där besökarna fick realtidsuppslag på försäkringspremier.',
         languages: ['C#', 'JavaScript'],
-        tags: ['Visual Studio', 'EpiServer', 'jQuery', 'AJAX', 'ASP.NET MVC'],
+        tags: ['Visual Studio', 'EPiServer', 'jQuery', 'AJAX', 'ASP.NET MVC'],
     },
     {
         name: 'Salus Ansvar',
@@ -175,7 +225,7 @@ export default [
         role: roles.UTVECKLING,
         from: 2007,
         to: 2010,
-        languages: ['C#', 'Java', 'JavaScript', 'Visual Basic', 'HTML', 'CSS', 'XML', 'SQL'],
+        languages: ['C#', 'Java', 'JavaScript', 'Visual Basic', 'HTML', 'CSS', 'XML', 'SQL', 'PowerShell'],
         content:
             'Min första period på QBranch gjorde jag integrationer för kommuner och skolor och automatiserade repetitiva arbetsuppgifter.',
     },
