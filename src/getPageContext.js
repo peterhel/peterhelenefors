@@ -36,9 +36,22 @@ const theme = createMuiTheme({
             },
             body2: {
                 fontWeight: 200,
-            }
-        }
-    }
+            },
+        },
+        MuiChip: {
+            root: {
+                borderRadius: 8,
+                marginRight: 4,
+                height: 'unset',
+            },
+            label: {
+                paddingTop: 4,
+                paddingBottom: 4,
+                paddingLeft: 6,
+                paddingRight: 6,
+            },
+        },
+    },
 });
 
 function createPageContext() {

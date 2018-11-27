@@ -1,6 +1,7 @@
 import React from 'react';
 import withStyles from '@material-ui/core/styles/withStyles';
 import Typography from '@material-ui/core/Typography/Typography';
+import Chip from '@material-ui/core/Chip/Chip';
 
 const styles = {
     row: {
@@ -21,15 +22,16 @@ const styles = {
     },
 };
 
-const Job = ({ name, role, period, classes, children }) => {
+const Job = ({ name, role, from , to, content, classes, languages = [], tags = [] }) => {
     return (
         <div>
             <div className={classes.row}>
                 <Typography className={[classes.name, classes.fat].join(' ')}>{name}</Typography> -{' '}
                 <Typography className={[classes.role, classes.fat].join(' ')}>{role}</Typography>
             </div>
-            <div className={classes.fat}>{period}</div>
-            <Typography>{children}</Typography>
+            <div className={classes.fat}>{`${from}${to && ' - ' + to}`}</div>
+            <Typography>{content}</Typography>
+            <div>{languages.map(lang => <Chip color={'primary'} label={lang} />)} {tags.map(tag => <Chip label={tag} />)}</div>
         </div>
     );
 };

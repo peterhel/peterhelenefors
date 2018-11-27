@@ -150,7 +150,7 @@ const Index = ({ classes }) => (
                         <Typography variant={'title'}>Språk</Typography>
                         <Typography paragraph>
                             Svenska: Modersmål<br />
-                            Engelska: Med beröm godkänt<br />
+                            Engelska: Flytande<br />
                         </Typography>
                     </div>
                 </div>
