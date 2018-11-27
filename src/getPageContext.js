@@ -50,7 +50,7 @@ const theme = createMuiTheme({
                 paddingBottom: 4,
                 paddingLeft: 6,
                 paddingRight: 6,
-                fontSize: '.9em'
+                fontSize: '.9rem'
             },
         },
     },

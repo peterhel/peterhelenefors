@@ -9,12 +9,12 @@ const styles = {
         alignItems: 'center',
     },
     name: {
-        fontSize: '1.2em',
+        fontSize: '1.2rem',
         paddingRight: 5,
     },
     role: {
         fontStyle: 'italic',
-        fontSize: '1.0em',
+        fontSize: '1.0rem',
         paddingLeft: 5,
     },
     fat: {
@@ -30,7 +30,7 @@ const Job = ({ name, employer, role, from , to, content, classes, languages = []
                 <Typography className={[classes.role, classes.fat].join(' ')}>{role}</Typography>
             </div>
             {employer && <Typography color={'primary'}>{employer}</Typography>}
-            <div className={classes.fat}>{`${from}${to && ' - ' + to}`}</div>
+            <Typography className={classes.fat}>{`${from}${to && ' - ' + to}`}</Typography>
             <Typography>{content}</Typography>
             <div>{languages.map(lang => <Chip color={'primary'} label={lang} />)} {tags.map(tag => <Chip label={tag} />)}</div>
         </div>
