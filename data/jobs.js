@@ -11,6 +11,7 @@ export default [
             'Under mitt år i casinostartupen Jickl fick jag god insikt i Google Clouds produktportfölj. Vår sajt och de bakomliggande mikrotjänsterna driftades i ett Kuberneteskluster. Byggen och automation sköttes med hjälp av Gitlab. Sajten byggdes med ramverken ReactJS och Redux. I mikrotjänsterna används Spring Boot och som datakälla Kafka.',
         from: 2017,
         to: 2018,
+        languages: ['JavaScript', 'Java', 'yaml'],
         tags: [
             'Spring Boot',
             'Kubernetes',
@@ -29,6 +30,7 @@ export default [
         to: 2018,
         content:
             'Var med från början i en bildelningsstartup. Tillsammans med en till utvecklare och våra två grundare tog jag fram en bildelningstjänst som hostades i Amazons moln. Jag ansvarade för utveckling av vårt backend-API, vår infrastruktur, drift och kontinuerliga deployer. Integrationer mot Stripe för betalningar och trafikverket och Carfax för körkortskontroll och bildata.',
+        languages: ['JavaScript', 'TypeScript'],
         tags: ['Jenkins CI', 'Amazon AWS', 'Terraform', 'NodeJS', 'Nginx'],
     },
     {
@@ -93,9 +95,9 @@ export default [
         from: 2012,
         to: 2014,
         content:
-            'Var med tidigt i satsningen på det sociala casinot Spin Tower där jag började som ensam senior utvecklare och tog fram aktitektur för utveckling av backend och infrastruktur. Vi började med att drifta allt i Microsoft Azure som då var lite för omoget och ersattes senare av Amazons motsvarande tjänster. Integrationer mot spelleverantörer och Facebook.',
+            'Var med tidigt i satsningen på det sociala casinot Spin Tower där jag började som ensam senior utvecklare och tog fram arktitektur för utveckling av backend och infrastruktur. Vi började med att drifta allt i Microsoft Azure som då var lite för omoget och ersattes senare av Amazons motsvarande tjänster. Integrationer mot spelleverantörer och Facebook.',
         languages: ['JavaScript', 'HTML', 'CSS', 'C#'],
-        tags: ['JavaScript MVC', 'jMeter', 'Microsoft Azure', 'Amazon AWS', 'Nginx'],
+        tags: ['JavaScript MVC', 'jMeter', 'Microsoft Azure', 'Amazon AWS', 'Nginx', 'Cruise Control'],
     },
     {
         name: 'Abou',
