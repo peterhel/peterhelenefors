@@ -22,13 +22,14 @@ const styles = {
     },
 };
 
-const Job = ({ name, role, from , to, content, classes, languages = [], tags = [] }) => {
+const Job = ({ name, employer, role, from , to, content, classes, languages = [], tags = [] }) => {
     return (
         <div>
             <div className={classes.row}>
                 <Typography className={[classes.name, classes.fat].join(' ')}>{name}</Typography> -{' '}
                 <Typography className={[classes.role, classes.fat].join(' ')}>{role}</Typography>
             </div>
+            {employer && <Typography color={'primary'}>{employer}</Typography>}
             <div className={classes.fat}>{`${from}${to && ' - ' + to}`}</div>
             <Typography>{content}</Typography>
             <div>{languages.map(lang => <Chip color={'primary'} label={lang} />)} {tags.map(tag => <Chip label={tag} />)}</div>

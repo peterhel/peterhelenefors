@@ -11,7 +11,7 @@ const theme = createMuiTheme({
     palette: {
         primary: {
             light: purple[300],
-            main: purple[500],
+            main: '#43526E',
             dark: purple[700],
         },
         secondary: {
@@ -40,7 +40,8 @@ const theme = createMuiTheme({
         },
         MuiChip: {
             root: {
-                borderRadius: 8,
+                borderRadius: 12,
+                marginTop: 8,
                 marginRight: 4,
                 height: 'unset',
             },
@@ -49,6 +50,7 @@ const theme = createMuiTheme({
                 paddingBottom: 4,
                 paddingLeft: 6,
                 paddingRight: 6,
+                fontSize: '.9em'
             },
         },
     },

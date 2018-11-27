@@ -1,16 +1,30 @@
+const roles = {
+    UTVECKLING: 'Utveckling',
+    FORVALTNING: 'Systemförvaltning',
+};
+
 export default [
     {
         name: 'Jickl',
-        role: 'Utvecklare JavaScript / Java',
+        role: roles.UTVECKLING,
         content:
             'Under mitt år i casinostartupen Jickl fick jag god insikt i Google Clouds produktportfölj. Vår sajt och de bakomliggande mikrotjänsterna driftades i ett Kuberneteskluster. Byggen och automation sköttes med hjälp av Gitlab. Sajten byggdes med ramverken ReactJS och Redux. I mikrotjänsterna används Spring Boot och som datakälla Kafka.',
         from: 2017,
         to: 2018,
-        tags: ['Spring Boot', 'Kubernetes', 'Google Cloud', 'SendBird', 'Prismic', 'Gitlab CI', 'ReactJS', 'Material UI'],
+        tags: [
+            'Spring Boot',
+            'Kubernetes',
+            'Google Cloud',
+            'SendBird',
+            'Prismic',
+            'Gitlab CI',
+            'ReactJS',
+            'Material UI',
+        ],
     },
     {
         name: 'Ridebite',
-        role: 'Utvecklare JavaScript / TypeScript',
+        role: roles.UTVECKLING,
         from: 2015,
         to: 2018,
         content:
@@ -19,7 +33,7 @@ export default [
     },
     {
         name: 'MrGreen',
-        role: 'Utvecklare C# / JavaScript',
+        role: roles.UTVECKLING,
         from: 2014,
         to: 2017,
         content:
@@ -28,61 +42,141 @@ export default [
     },
     {
         name: 'Social Thrills',
-        role: 'Utvecklare C# / JavaScript',
+        role: roles.UTVECKLING,
         from: 2012,
         to: 2014,
-        content: 'Var med tidigt i satsningen på det sociala casinot Spin Tower där jag började som ensam senior utvecklare och tog fram aktitektur för utveckling av backend och infrastruktur. Vi började med att drifta allt i Microsoft Azure som då var lite för omoget och ersattes senare av Amazons motsvarande tjänster. Integrationer mot spelleverantörer och Facebook.',
-        tags: ['JavaScript MVC', 'jMeter', 'Microsoft Azure', 'Amazon AWS', 'Nginx']
+        content:
+            'Var med tidigt i satsningen på det sociala casinot Spin Tower där jag började som ensam senior utvecklare och tog fram aktitektur för utveckling av backend och infrastruktur. Vi började med att drifta allt i Microsoft Azure som då var lite för omoget och ersattes senare av Amazons motsvarande tjänster. Integrationer mot spelleverantörer och Facebook.',
+        tags: ['JavaScript MVC', 'jMeter', 'Microsoft Azure', 'Amazon AWS', 'Nginx'],
     },
     {
         name: 'Abou',
-        role: 'Utvecklare C#',
+        role: roles.UTVECKLING,
         from: 2010,
         to: 2012,
-        content: 'Var med och tog fram e-tjänster åt kommuner.',
-        tags: ['EpiServer']
+        content:
+            'Byggde i ett tremannateam Jobbtorgsportalen åt Stadsdelsförvaltningen i Stockholms Stad, en plattform där tre olika parter kunde kommunicera och dela information.',
+        languages: ['C#', 'JavaScript', 'HTML', 'CSS'],
+        tags: [],
+    },
+    {
+        name: 'Abou',
+        role: roles.UTVECKLING,
+        from: 2010,
+        to: 2012,
+        content:
+            'Byggde ett administrationsgränssnitt till ett enkätverktyg till en produkt som bidrog stort till att Upplands Väsby titulerades Sveriges IT-kommun 2011.',
+        languages: ['C#', 'JavaScript', 'HTML', 'CSS'],
+        tags: [],
+    },
+    {
+        name: 'Abou',
+        role: 'Pre-sale / Teknisk resurs',
+        from: 2010,
+        to: 2012,
+        content: 'Satt med som teknisk resurs i förhandlingar om att i enlighet med Lean förbättra processerna för hur en myndighet skulle kommunicera med sina leverantörer. Rent konkret hur ett specialanpassat system skulle kunna ersätta och hantera data gentemot epost med bifogade filer.',
+        tags: ['Lean', 'Microsoft Visio', 'Microsoft Office'],
+    },
+    {
+        name: 'Abou',
+        role: roles.UTVECKLING,
+        from: 2010,
+        to: 2012,
+        content: 'Utvecklade plattform utifrån vilken man byggde e-tjänster åt kommuner.',
+        languages: ['C#', 'HTML', 'CSS', 'JavaScript'],
+        tags: ['Visual Studio, TFS', 'DojoToolkit', 'E-legitimation'],
+    },
+    {
+        name: 'SMART Hälsa i Nykvarn',
+        employer: 'Generic Constructions',
+        role: roles.UTVECKLING,
+        from: 2009,
+        to: 2011,
+        content: 'Byggde ett bokningssystem från grunden för gymbesökare att boka in sig på pass. I version två av bokningssystemet skrevs det om från Java till C#.',
+        languages: ['Java', 'HTML', 'CSS', 'JavaScript', 'C#'],
+        tags: ['Google App Engine', 'MySQL']
+    },
+
+    {
+        name: 'ICA',
+        employer: 'QBranch',
+        role: roles.UTVECKLING,
+        from: 2009,
+        to: 2010,
+        content: 'Arbetade i ett litet team som byggde ett system för att kontrollera logistik, plocklistor och prenumerationer på recept och matvaror.',
+        languages: ['C#', 'HTML', 'CSS', 'JavaScript'],
+        tags: ['ASP.NET MVC'],
     },
     {
         name: 'ICA',
-        role: 'Utvecklare C#',
+        employer: 'QBranch',
+        role: roles.UTVECKLING,
         from: 2009,
         to: 2010,
-        content: 'Hjälpte till att bygga den nya ICA-sajten. Var också med från början i projektet Matkassen och byggde den interaktiva varukorgen med dra- och släppfunktion med hjälp av "asynkron javascript" så att sidan inte behövde laddas om.',
-        tags: ['ASP.NET MVC', 'EpiServer']
+        content: 'Byggde den nya kundwebben/butiksportalen med specialanpassad EpiServer.',
+        languages: ['C#', 'HTML', 'CSS', 'JavaScript'],
+        tags: ['ASP.NET MVC', 'EpiServer'],
+    },
+    {
+        name: 'ICA',
+        employer: 'QBranch',
+        role: roles.UTVECKLING,
+        from: 2009,
+        to: 2010,
+        content: 'Byggde med två kollegor ett administrationsgränssnitt för recept.',
+        tags: ['ASP.NET MVC', 'EpiServer'],
     },
     {
         name: 'Salus Ansvar',
-        role: 'Utveckling',
+        employer: 'QBranch',
+        role: roles.UTVECKLING,
         from: 2008,
         to: 2009,
-        content: 'Skapade tillsammans med en kollega en webbsida där besökarna fick realtidsuppslag på försäkringspremier.',
+        content:
+            'Byggde i ett tvåmannateam ett system där man samlade in kundleads för bolån. Systemet bestod av administrationsgränssnitt och en webbtjänst för integration från externa parter.',
         languages: ['C#', 'JavaScript'],
-        tags: ['Visual Studio', 'EpiServer', 'jQuery', 'AJAX', 'ASP.NET MVC']
+        tags: ['Visual Studio', 'EpiServer', 'jQuery', 'AJAX', 'ASP.NET MVC'],
     },
     {
         name: 'Salus Ansvar',
-        role: 'Utveckling',
+        employer: 'QBranch',
+        role: roles.UTVECKLING,
         from: 2008,
         to: 2009,
-        content: 'Hade stor betydelse för utformning och arkitektur vid framtagningen av en omfattande integrationsplattform för premieuppslag för försäkringar',
+        content:
+            'Skapade tillsammans med en kollega en webbsida där besökarna fick realtidsuppslag på försäkringspremier.',
+        languages: ['C#', 'JavaScript'],
+        tags: ['Visual Studio', 'EpiServer', 'jQuery', 'AJAX', 'ASP.NET MVC'],
+    },
+    {
+        name: 'Salus Ansvar',
+        employer: 'QBranch',
+        role: roles.UTVECKLING,
+        from: 2008,
+        to: 2009,
+        content:
+            'Hade stor betydelse för utformning och arkitektur vid framtagningen av en omfattande integrationsplattform för premieuppslag för försäkringar',
         languages: ['C#', 'Java', 'XML'],
-        tags: ['Visual Studio', 'TFS', 'WCF', 'FitNesse', 'BDD', 'DDD']
+        tags: ['Visual Studio', 'TFS', 'WCF', 'FitNesse', 'BDD', 'DDD'],
     },
     {
         name: 'Salus Ansvar',
-        role: 'Systemförvaltning',
+        employer: 'QBranch',
+        role: roles.FORVALTNING,
         from: 2008,
         to: 2009,
-        content: 'Satt i ett förvaltningsteam inom bank och försäkring. Uppdraget gick ut på att underhålla och vidareutveckla befintliga system i företagets infrastruktur såsom kundwebb, databaskörningar och informationsflöden.',
+        content:
+            'Satt i ett förvaltningsteam inom bank och försäkring. Uppdraget gick ut på att underhålla och vidareutveckla befintliga system i företagets infrastruktur såsom kundwebb, databaskörningar och informationsflöden.',
         languages: ['Visual Basic', 'Java', 'C#', 'SQL'],
-        tags: ['Visual Studio', 'TFS', 'Windows Server', 'TDD', 'DDD', 'WCF', 'SOAP']
+        tags: ['Visual Studio', 'TFS', 'Windows Server', 'TDD', 'DDD', 'WCF', 'SOAP'],
     },
     {
         name: 'QBranch',
-        role: 'Utveckling',
+        role: roles.UTVECKLING,
         from: 2007,
         to: 2010,
         languages: ['C#', 'Java', 'JavaScript', 'Visual Basic', 'HTML', 'CSS', 'XML', 'SQL'],
-        content: 'Min första period på QBranch gjorde jag integrationer för kommuner och skolor och automatiserade repetitiva arbetsuppgifter.'
-    }
+        content:
+            'Min första period på QBranch gjorde jag integrationer för kommuner och skolor och automatiserade repetitiva arbetsuppgifter.',
+    },
 ];
