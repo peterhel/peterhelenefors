@@ -43,7 +43,7 @@ const Circle = ({ fill }) => (
 const Sammanfattning = () => {
     return (
         <React.Fragment>
-            <Section title={'Kunskaper'}>
+            <Section title={'Erfarenheter'}>
                 {/*<Typography>Språk i relation till varandra utifrån utförda projekt</Typography>*/}
 
                 {langsSorted2.map(
