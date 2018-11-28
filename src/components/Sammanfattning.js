@@ -44,6 +44,8 @@ const Sammanfattning = () => {
     return (
         <React.Fragment>
             <Section title={'Kunskaper'}>
+                {/*<Typography>Språk i relation till varandra utifrån utförda projekt</Typography>*/}
+
                 {langsSorted2.map(
                     ([lang, count]) =>
                         count > 1 ? (

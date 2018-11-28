@@ -37,6 +37,9 @@ const theme = createMuiTheme({
             body2: {
                 fontWeight: 200,
             },
+            title: {
+                fontSize: '1.2rem',
+            }
         },
         MuiChip: {
             root: {
